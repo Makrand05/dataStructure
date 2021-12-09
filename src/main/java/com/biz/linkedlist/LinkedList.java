@@ -32,4 +32,12 @@ public class LinkedList {
         linkedListClass.printList();
         
     }
+
+    public static void append() {
+        LinkedListClass linkedListClass =new LinkedListClass();
+        linkedListClass.appendData(56);
+        linkedListClass.appendData(30);
+        linkedListClass.appendData(70);
+        linkedListClass.printList();
+    }
 }

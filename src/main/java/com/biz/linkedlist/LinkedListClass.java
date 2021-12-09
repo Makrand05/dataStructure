@@ -33,4 +33,15 @@ public class LinkedListClass {
             }
         }
     }
+
+    public void appendData(int data) {
+        Node node=new Node(data);
+        if(head==null){
+            this.head=node;
+        }
+        else {
+            tail.next=node;
+        }
+        this.tail=node;
+    }
 }

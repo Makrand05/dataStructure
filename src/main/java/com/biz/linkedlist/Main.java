@@ -7,6 +7,7 @@ public class Main {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter 1 for create list");
         System.out.println("Enter 2 for add at beginning");
+        System.out.println("Enter 3 for append the element");
         switch (sc.nextInt())
         {
             case 1:
@@ -16,6 +17,8 @@ public class Main {
             case 2:
                 LinkedList.addBefore();
                 break;
+            case 3:
+                LinkedList.append();
             default:
                 System.out.println("please enter correct option");
         }
