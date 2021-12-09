@@ -11,6 +11,7 @@ public class Main {
         System.out.println("Enter 4 for add in Middle ");
         System.out.println("Enter 5 for the delete first element");
         System.out.println("Enter 6 for Delete last element");
+        System.out.println("Enter 7 for Search the element ...");
         switch (sc.nextInt())
         {
             case 1:
@@ -31,6 +32,9 @@ public class Main {
                 break;
             case 6:
                 LinkedList.deleteLast();
+                break;
+            case 7:
+                LinkedList.search();
                 break;
             default:
                 System.out.println("please enter correct option");

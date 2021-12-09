@@ -1,5 +1,7 @@
 package com.biz.linkedlist;
 
+import java.util.Scanner;
+
 public class LinkedList {
     static Node head;//=firstNode;
     static Node tail;//=thirdNode;
@@ -65,5 +67,15 @@ public class LinkedList {
         linkedListClass.printList();
         linkedListClass.remove();
         linkedListClass.printList();
+    }
+
+    public static void search() {
+        LinkedListClass linkedListClass=addBefore();
+        linkedListClass.printList();
+        System.out.println("Enter element you want to search");
+        int a=(new Scanner(System.in)).nextInt();
+       int position= linkedListClass.searchElement(a);
+        System.out.println("Element present at "+position);
+
     }
 }
