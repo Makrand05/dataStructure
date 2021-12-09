@@ -114,4 +114,14 @@ public class LinkedListClass {
 
         }
     }
+
+    public void deleteElement(int data) {
+        Node node=head;
+        while (node.next!= null) {
+           if(node.next.data==data) {
+               node.next=node.next.next;
+           }
+            node = node.next;
+        }
+    }
 }

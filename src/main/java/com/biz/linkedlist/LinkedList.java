@@ -74,15 +74,25 @@ public class LinkedList {
         linkedListClass.printList();
         System.out.println("Enter element you want to search");
         int a=(new Scanner(System.in)).nextInt();
-       int position= linkedListClass.searchElement(a);
+        int position= linkedListClass.searchElement(a);
         System.out.println("Element present at "+position);
 
     }
 
-    public static void insertAfter() {
+    public static LinkedListClass insertAfter() {
         LinkedListClass linkedListClass=addBefore();
         linkedListClass.printList();
         linkedListClass.insertAfter(30,40);
+        linkedListClass.printList();
+        return linkedListClass;
+    }
+
+    public static void deleteElemet() {
+        LinkedListClass linkedListClass=insertAfter();
+        linkedListClass.printList();
+        System.out.println("Enter element you want to Delete");
+        int a=(new Scanner(System.in)).nextInt();
+        linkedListClass.deleteElement(a);
         linkedListClass.printList();
     }
 }
