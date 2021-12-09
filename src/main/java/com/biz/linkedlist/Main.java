@@ -6,11 +6,15 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
         System.out.println("Enter 1 for create list");
+        System.out.println("Enter 2 for add at beginning");
         switch (sc.nextInt())
         {
             case 1:
                 LinkedList.createLinkedList();
                 LinkedList.printList();
+                break;
+            case 2:
+                LinkedList.addBefore();
                 break;
             default:
                 System.out.println("please enter correct option");

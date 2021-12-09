@@ -23,4 +23,13 @@ public class LinkedList {
             temp=temp.next;
         }
     }
+
+    public static void addBefore() {
+        LinkedListClass linkedListClass=new LinkedListClass();
+        linkedListClass.add(70);
+        linkedListClass.add(30);
+        linkedListClass.add(56);
+        linkedListClass.printList();
+        
+    }
 }
