@@ -78,4 +78,11 @@ public class LinkedList {
         System.out.println("Element present at "+position);
 
     }
+
+    public static void insertAfter() {
+        LinkedListClass linkedListClass=addBefore();
+        linkedListClass.printList();
+        linkedListClass.insertAfter(30,40);
+        linkedListClass.printList();
+    }
 }
