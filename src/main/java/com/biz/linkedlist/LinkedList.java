@@ -24,12 +24,14 @@ public class LinkedList {
         }
     }
 
-    public static void addBefore() {
+    public static LinkedListClass addBefore() {
         LinkedListClass linkedListClass=new LinkedListClass();
         linkedListClass.add(70);
         linkedListClass.add(30);
         linkedListClass.add(56);
         linkedListClass.printList();
+
+        return linkedListClass;
         
     }
 
@@ -48,4 +50,14 @@ public class LinkedList {
         linkedListClass.addMid(30);
         linkedListClass.printList();
     }
+
+    public static void deleteFirst() {
+        LinkedListClass linkedListClass=addBefore();
+        linkedListClass.printList();
+        linkedListClass.pop();
+        linkedListClass.printList();
+
+    }
+
+
 }

@@ -43,33 +43,37 @@ public class LinkedListClass {
 
     public void addMid(int data) {
         Node node = new Node(data);
-        int size=calculateLength();
-        Node temp,current = null;
+        int size = calculateLength();
+        Node temp, current = null;
         if (head == null) {
             this.head = node;
             this.tail = node;
-        }
-        else {
-            temp=head;
-            int count=(size%2==0)?(size/2):(size+1)/2;
-            for(int i=0;i<count;i++){
-                current=temp;
-                temp=temp.next;
+        } else {
+            temp = head;
+            int count = (size % 2 == 0) ? (size / 2) : (size + 1) / 2;
+            for (int i = 0; i < count; i++) {
+                current = temp;
+                temp = temp.next;
             }
-            current.next=node;
-            node.next=temp;
+            current.next = node;
+            node.next = temp;
         }
-
 
 
     }
-    public int calculateLength(){
-        int index=0;
-        Node temp=head;
-        while(temp!=null){
+
+    public int calculateLength() {
+        int index = 0;
+        Node temp = head;
+        while (temp != null) {
             index++;
-            temp=tail.next;
+            temp = tail.next;
         }
         return index;
+    }
+
+    public void pop() {
+        head = head.next;
+
     }
 }

@@ -9,6 +9,7 @@ public class Main {
         System.out.println("Enter 2 for add at beginning");
         System.out.println("Enter 3 for append the element");
         System.out.println("Enter 4 for add in Middle ");
+        System.out.println("Enter 5 for the delete first element");
         switch (sc.nextInt())
         {
             case 1:
@@ -23,6 +24,9 @@ public class Main {
                 break;
             case 4:
                 LinkedList.addInMid();
+                break;
+            case 5:
+                LinkedList.deleteFirst();
                 break;
             default:
                 System.out.println("please enter correct option");
