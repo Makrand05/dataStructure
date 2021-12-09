@@ -8,6 +8,7 @@ public class Main {
         System.out.println("Enter 1 for create list");
         System.out.println("Enter 2 for add at beginning");
         System.out.println("Enter 3 for append the element");
+        System.out.println("Enter 4 for add in Middle ");
         switch (sc.nextInt())
         {
             case 1:
@@ -19,6 +20,10 @@ public class Main {
                 break;
             case 3:
                 LinkedList.append();
+                break;
+            case 4:
+                LinkedList.addInMid();
+                break;
             default:
                 System.out.println("please enter correct option");
         }

@@ -40,4 +40,12 @@ public class LinkedList {
         linkedListClass.appendData(70);
         linkedListClass.printList();
     }
+
+    public static void addInMid() {
+        LinkedListClass linkedListClass =new LinkedListClass();
+        linkedListClass.appendData(56);
+        linkedListClass.appendData(70);
+        linkedListClass.addMid(30);
+        linkedListClass.printList();
+    }
 }
