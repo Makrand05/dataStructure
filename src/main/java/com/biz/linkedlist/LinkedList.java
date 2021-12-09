@@ -60,4 +60,10 @@ public class LinkedList {
     }
 
 
+    public static void deleteLast() {
+        LinkedListClass linkedListClass=addBefore();
+        linkedListClass.printList();
+        linkedListClass.remove();
+        linkedListClass.printList();
+    }
 }

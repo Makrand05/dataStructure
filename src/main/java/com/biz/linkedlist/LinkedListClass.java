@@ -76,4 +76,12 @@ public class LinkedListClass {
         head = head.next;
 
     }
+
+    public void remove() {
+        Node node=this.head;
+        while (node.next!=null){
+            node=node.next;
+            node.next=null;
+        }
+    }
 }
