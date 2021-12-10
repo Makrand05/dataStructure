@@ -95,4 +95,13 @@ public class LinkedList {
         linkedListClass.deleteElement(a);
         linkedListClass.printList();
     }
+
+    public static void sortLinkedList() {
+        LinkedListClass linkedListClass =new LinkedListClass();
+        linkedListClass.sortingAdd(56);
+        linkedListClass.sortingAdd(30);
+        linkedListClass.sortingAdd(40);
+        linkedListClass.sortingAdd(70);
+        linkedListClass.printList();
+    }
 }

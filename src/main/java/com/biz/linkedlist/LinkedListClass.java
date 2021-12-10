@@ -78,19 +78,18 @@ public class LinkedListClass {
     }
 
     public void remove() {
-        Node node=this.head;
-        while (node.next!=null){
-            node=node.next;
-            node.next=null;
+        Node node = this.head;
+        while (node.next != null) {
+            node = node.next;
+            node.next = null;
         }
     }
 
     public int searchElement(int a) {
-        int count=1;
-        Node node=head;
+        int count = 1;
+        Node node = head;
         while (node != null) {
-            if(node.data==a)
-            {
+            if (node.data == a) {
                 return count;
 
             }
@@ -101,14 +100,13 @@ public class LinkedListClass {
     }
 
     public void insertAfter(int element, int data) {
-        Node node=head;
+        Node node = head;
         Node newNode = new Node(data);
         while (node != null) {
-            if(node.data==element)
-            {
-                Node temp= node.next;
-                node.next=newNode;
-                newNode.next=temp;
+            if (node.data == element) {
+                Node temp = node.next;
+                node.next = newNode;
+                newNode.next = temp;
             }
             node = node.next;
 
@@ -116,12 +114,31 @@ public class LinkedListClass {
     }
 
     public void deleteElement(int data) {
-        Node node=head;
-        while (node.next!= null) {
-           if(node.next.data==data) {
-               node.next=node.next.next;
-           }
+        Node node = head;
+        while (node.next != null) {
+            if (node.next.data == data) {
+                node.next = node.next.next;
+            }
             node = node.next;
         }
+    }
+
+    public void sortingAdd(int data) {
+        Node node = new Node(data);
+        if (head == null || head.data >= node.data) {
+            node.next = head;
+            head = node;
+        } else {
+            Node temp = head;
+            while (temp.next != null && temp.next.data < node.data) {
+                //if (temp.next.data < node.data) {
+                    temp = temp.next;
+               // }
+            }
+            node.next = temp.next;
+            temp.next = node;
+
+        }
+
     }
 }
